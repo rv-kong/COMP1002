@@ -1,13 +1,18 @@
-/*
-CSS selector types:
-    - Simple selectors - target elements based on one property.
-        + Type/element selector: p, h1, section
-        + Class sekectirL .text-block
-        + ID selector: #main-nav
-        + Universal selector: *
-    - Grouping Selector
-        +
-*/
+/* --------------------------------------------------------------------------
+   CSS selector types:
+       - Simple selectors — target elements based on one property.
+           + Type/element selector: p, h1, section
+           + Class selector: .text-block
+           + ID selector: #main-nav
+           + Universal selector: *
+       - Grouping selector.
+           + Comma-separated list: h1, h2, h3 {
+       - Combinators — target elements based on their relationship to another element
+           + Descendant combinator (space): section p
+           + Child combinator (>): nav > ul
+           + Adjacent sibling (+): h1 + p
+           + General sibling (~): h1 ~ p
+   -------------------------------------------------------------------------- */
 *{
     margin: 0;
 }
