@@ -1,0 +1,37 @@
+/* Make a 3 item row */
+/* Space it out */
+/* Center a Box */
+/* Build a Nav Bar */
+h1{
+    text-align: center;
+}
+.items{
+    display: flex;
+    max-width: 1024px;
+    justify-content: left;
+}
+.items-label{
+    text-align: center;
+    margin-top: 115px;
+    padding: 0;
+}
+.items-label h2{
+  font-size: 2rem;
+}
+.items img{
+    flex: 1;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+}
+section > nav > menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 125px;
+}
+section > nav > menu > li > a{
+    color: #666666;
+    text-decoration: none;
+    font-weight: 700;
+}
