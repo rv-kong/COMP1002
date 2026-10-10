@@ -1,0 +1,56 @@
+body{margin: 0}
+/* ===== Custom Fonts ===== */
+@font-face{
+    font-family: intro;
+    src:url(../fonts/Whisper-Regular.ttf); 
+}
+/* ===== Basics ===== */
+.intro{
+    font-family: intro, sans-serif;
+}
+h1{
+    font-family: sans-serif;
+}
+h2, h3, h4, h5, h6{
+    font-family: sans-serif; 
+}
+p, a, li{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+/* ===== Header ===== */
+header{
+    display: block;
+    position: static;
+    float: left;
+}
+header > div{
+    width: auto;
+    height: 140px;
+    padding-top: 5px;
+}
+header > div > a > img{
+    width: auto;
+    height: 100%; 
+}
+/* ===== Main ===== */
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    float: none;
+}
+main section h1{
+    padding: 0;
+    margin: 0;
+    
+}
+main section + section{
+    padding: 0;
+    margin: 0;
+}
+main section + section + section{
+    padding: 0;
+    margin: 0;
+}
