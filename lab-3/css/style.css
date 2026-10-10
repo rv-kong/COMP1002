@@ -2,8 +2,24 @@
 /* Space it out */
 /* Center a Box */
 /* Build a Nav Bar */
+header div{
+    flex-grow: 1;
+}
 h1{
     text-align: center;
+}
+header nav menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 125px;
+}
+section{
+    display: flex;
+    min-height: 450px;
+    align-items: center flex-start flex-end;
+    justify-content: center start flex-end;
 }
 .items{
     display: flex;
@@ -23,12 +39,6 @@ h1{
     flex-shrink: 0;
     width: 300px;
     height: 300px;
-}
-section > nav > menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 125px;
 }
 section > nav > menu > li > a{
     color: #666666;
