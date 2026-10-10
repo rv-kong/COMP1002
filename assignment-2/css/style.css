@@ -20,9 +20,11 @@ p, a, li{
 }
 /* ===== Header ===== */
 header{
-    display: block;
-    position: static;
+    display: flex;
+    position: fixed;
     float: left;
+    top: 0;
+    left: 0;
 }
 header > div{
     width: auto;
@@ -32,6 +34,7 @@ header > div{
 header > div > a > img{
     width: auto;
     height: 100%; 
+    padding: 0 5px;
 }
 /* ===== Main ===== */
 main{
@@ -40,17 +43,8 @@ main{
     flex-direction: column;
     position: static;
     float: none;
+    margin-top: 250px;
 }
-main section h1{
-    padding: 0;
-    margin: 0;
-    
-}
-main section + section{
-    padding: 0;
-    margin: 0;
-}
-main section + section + section{
-    padding: 0;
-    margin: 0;
+main > section > div{
+    align-items: left;
 }
