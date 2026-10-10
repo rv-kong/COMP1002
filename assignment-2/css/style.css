@@ -7,11 +7,20 @@ body{margin: 0}
 /* ===== Basics ===== */
 .intro{
     font-family: intro, sans-serif;
+    align-items: left;
+}
+.intro p{
+    font-size: 1.7rem;
+    margin-left: -175px;
 }
 h1{
     font-family: sans-serif;
 }
-h2, h3, h4, h5, h6{
+h2{
+    font-family: sans-serif;
+    margin-left: -105px;
+}
+h3, h4, h5, h6{
     font-family: sans-serif; 
 }
 p, a, li{
@@ -45,6 +54,7 @@ main{
     float: none;
     margin-top: 250px;
 }
-main > section > div{
+main section div p{
     align-items: left;
+    margin-left:-80px;
 }
