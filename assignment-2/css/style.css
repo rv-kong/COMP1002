@@ -15,6 +15,7 @@ body{margin: 0}
 /* ===== Basics ===== */
 .intro{
     font-family: intro, sans-serif;
+    letter-spacing: 5px;
 }
 .intro p{
     font-size: 1.7rem;
@@ -30,6 +31,7 @@ h2, h3, h4, h5{
 p, a, li{
     font-size: 1.2rem;
     text-decoration: none;
+    line-height: 75px;
 }
 /* ===== Custom Fonts ===== */
 .party{
@@ -102,6 +104,21 @@ p, a, li{
     font-size: 2rem;
     text-shadow: 4px 3px 4px rgba(0,0,0,.8);
     letter-spacing: 2px;
+}
+.noisy{
+    background-color: transparent;
+    color: orange;
+    font-size: 1.5rem;
+    background-image: radial-gradient(red, red, red, yellow, yellow, black);
+    text-shadow: 4px 3px 4px rgba(0,0,0,1);
+    letter-spacing: 3px;
+}
+.summer{
+    background-color: transparent;
+    color: white;
+    background-image: linear-gradient(orange, orange, lightblue, lightblue, lightblue, green);
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+    font-size: 1.8rem;
 }
 /* ===== Header ===== */
 header{
