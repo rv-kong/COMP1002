@@ -2,7 +2,10 @@ body{margin: 0}
 /* ===== Custom Fonts ===== */
 @font-face{
     font-family: intro;
-    src:url(../fonts/Whisper-Regular.ttf); 
+    src:url(../fonts/Whisper-Regular.ttf);
+
+    font-family: bit;
+    src:url(../fonts/Bitcount.ttf)
 }
 /* ===== Basics ===== */
 .intro{
@@ -14,16 +17,15 @@ body{margin: 0}
 h1{
     font-family: sans-serif;
 }
-h2{
-    font-family: sans-serif;
-}
-h3, h4, h5, h6{
-    font-family: sans-serif; 
+h2, h3, h4, h5, h6{
+    font-family: bit, sans-serif; 
+    color: crimson;
 }
 p, a, li{
     font-size: 1.2rem;
     text-decoration: none;
 }
+/* ===== Custom Fonts ===== */
 /* ===== Header ===== */
 header{
     display: flex;
