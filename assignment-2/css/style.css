@@ -3,9 +3,14 @@ body{margin: 0}
 @font-face{
     font-family: intro;
     src:url(../fonts/Whisper-Regular.ttf);
-
+}
+@font-face {
     font-family: bit;
-    src:url(../fonts/Bitcount.ttf)
+    src: url(../fonts/Bitcount.ttf);
+}
+@font-face{
+    font-family: killer;
+    src:url("../fonts/Nosifer.ttf");
 }
 /* ===== Basics ===== */
 .intro{
@@ -17,15 +22,87 @@ body{margin: 0}
 h1{
     font-family: sans-serif;
 }
-h2, h3, h4, h5, h6{
-    font-family: bit, sans-serif; 
-    color: crimson;
+h2, h3, h4, h5{
+    font-family: bit, sans-serif;
+    color: darkorange;
+    font-size: 2rem;
 }
 p, a, li{
     font-size: 1.2rem;
     text-decoration: none;
 }
 /* ===== Custom Fonts ===== */
+.party{
+    font-family: fantasy;
+    background-color: transparent;
+    color: blueviolet;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 8px;
+    background-image: linear-gradient(to right, red, orange, yellow, orange, red);
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+    margin: 0;
+    position: relative;
+}
+.gang{
+    color: crimson;
+    background-color: black;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 0 25px 0px rgba(25, 51, 222, 0.776);
+    margin: 0;
+    position: relative;
+}
+.robbery{
+    background-color: transparent;
+    font-size: 2.2rem;
+    color: rgb(190, 185, 185);
+    background-image: linear-gradient(black,grey,black,grey,black,grey,black,grey,black,grey);
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+}
+.chain{
+    background-color: transparent;
+    font-size: 2.2rem;
+    color: dodgerblue;
+    background-image: radial-gradient(silver, silver, gold,silver, silver, gold);
+}
+.killer{
+    font-family: killer, sans-serif;
+    background-color: transparent;
+    color: crimson;
+}
+.sorry{
+    background-color: transparent;
+    color: aqua;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+    font-size: 1.5rem;
+}
+.change{
+    background-color: transparent;
+    text-shadow: 6px 7px 2px rgba(0,0,0,.8);
+    font-size: 1.8rem;
+}
+.body{
+    background-color: transparent;
+    color: pink;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+    font-size: 2rem;
+}
+.rock{
+    background-color: black;
+    color:grey;
+    text-shadow: 4px 3px 4px rgb(98, 98, 98);
+    font-size: 1.8rem;
+}
+.rich{
+    background-color: transparent;
+    color: greenyellow;
+    font-size: 2rem;
+    text-shadow: 4px 3px 4px rgba(0,0,0,.8);
+    letter-spacing: 2px;
+}
 /* ===== Header ===== */
 header{
     display: flex;
