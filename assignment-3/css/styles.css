@@ -6,6 +6,25 @@
     font-family: matrix;
     src:url("../fonts/Miltown-K17.ttf");
 }
+.underline{
+    position: relative;
+    display: inline-block;
+}
+.underline::after{
+    content: "";
+    position: absolute;
+    left: 363px;
+    bottom: 23px;
+    width: 135px;
+    height: 1px;
+    font-size: 30px;
+    background-color: white;
+    box-shadow:
+        0 0 5px #d8c5ff,
+        0 0 10px #a879ff,
+        0 0 20px #783cff,
+        0 0 35px #5420a8;
+}
 body{
     margin: auto;
     height: 1200px;
@@ -58,24 +77,41 @@ div + div{
 div + div + div{
     grid-area: title;
     flex-direction: column;
+    position: relative;;
     height: 50px;
     width: auto;
     padding: 0;
     margin: 0;
 }
 div + div + div > div > p{
-    padding: 0 0px 0 350px;
+    padding: 0 0 0 350px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
     letter-spacing: 50px;
-    text-decoration: underline;
-    text-underline-offset: -1px;
-    text-decoration-skip-ink: none;
-    text-shadow: 0 0 10px blue;
+    text-shadow:
+        0 0 5px #d8c5ff,
+        0 0 10px #a879ff,
+        0 0 20px #783cff,
+        0 0 35px #5420a8;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(65, 25, 120, 0.85),
+        rgba(100, 55, 160, 0.65),
+        rgba(65, 25, 120, 0.85),
+        transparent);
+        background-repeat: no-repeat;
+        background-size: 500px 100%;
+        background-position: 100% 50%;
 }
 div + div + div > div + div > p{
     font-family: matrix;
+    position: absolute;
+    display: inline-block;
     font-size: 50px;
-    letter-spacing: 1px;
-    height: 20px;
+    letter-spacing: 5px;
+    height: 70px;
+    padding: 0 0 0 290px;
+    bottom: -85px;
+    z-index: -1;
 }
