@@ -1,0 +1,81 @@
+@font-face{
+    font-family: OCRA;
+    src:url("../fonts/OCRA.ttf");
+}
+@font-face{
+    font-family: matrix;
+    src:url("../fonts/Miltown-K17.ttf");
+}
+body{
+    margin: auto;
+    height: 1200px;
+    width: 857px;
+    display: grid;
+    grid-template-rows: 120px auto;
+    position: relative;
+    grid-template-areas:
+    "header"
+    "blank"
+    "title"
+    "other"
+    "footer";
+    background-color: #333333;
+    background-image: url("../img/notext_movie.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: contain;
+}
+div{
+    grid-area: header;
+    display: flex;
+    padding: 0.7rem;
+    height: 100px;
+}
+div > div p{
+    flex-basis: auto;
+    height: 100%;
+    width: 250px;
+    padding-top: 6px;
+    padding-left: 90px;
+    padding-right: 0;
+    letter-spacing: 1px;
+    font-family: OCRA, monospace;
+    font-size: 1.5rem;
+    color: #F4F7FA;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgb(20, 0, 122), 0 0 20px rgb(6, 6, 130), 0 0 25px rgb(0, 0, 137);
+}
+div > div + div p{
+    width: 350px;
+    padding-left: 10px;
+}
+div + div{
+    grid-area: blank;
+    height: 650px;
+    width: auto;
+}
+div + div + div{
+    grid-area: title;
+    flex-direction: column;
+    height: 50px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+div + div + div > div > p{
+    padding: 0 0px 0 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    letter-spacing: 50px;
+    text-decoration: underline;
+    text-underline-offset: -1px;
+    text-decoration-skip-ink: none;
+    text-shadow: 0 0 10px blue;
+}
+div + div + div > div + div > p{
+    font-family: matrix;
+    font-size: 50px;
+    letter-spacing: 1px;
+    height: 20px;
+}
