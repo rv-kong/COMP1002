@@ -6,24 +6,65 @@
     font-family: matrix;
     src:url("../fonts/Miltown-K17.ttf");
 }
-.underline{
-    position: relative;
-    display: inline-block;
+@font-face {
+    font-family: beetwo;
+    src: url("../fonts/bee_two.otf");
 }
-.underline::after{
+.credit{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: beetwo;
+    color: rgba(255, 255, 255, 0.667);
+    text-shadow: 1px 1px 0 black;
+    gap: 0.3em;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    line-height: 8px;
+}
+.credit-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    margin: 0;
+    padding: 0;
+    min-width: 90%;
+    /* Stretches text height to 150% */
+    transform: scaleY(1.5); 
+    transform-origin: center;
+    letter-spacing: 0px;
+    
+}
+.standard{
+    font-size: 25px;
+    line-height: 1;
+}
+.prefix{
+    font-size: 0.7rem;
+    line-height: 1;
+    text-align: left;
+    padding-top: 3px;
+}
+.stack{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    transform: translate(0, 2px);
+    text-align: right;
+}
+.stack1{
     content: "";
-    position: absolute;
-    left: 363px;
-    bottom: 23px;
-    width: 135px;
-    height: 1px;
-    font-size: 30px;
-    background-color: white;
-    box-shadow:
-        0 0 5px #d8c5ff,
-        0 0 10px #a879ff,
-        0 0 20px #783cff,
-        0 0 35px #5420a8;
 }
 body{
     margin: auto;
@@ -71,47 +112,25 @@ div > div + div p{
 }
 div + div{
     grid-area: blank;
-    height: 650px;
+    height: 720px;
     width: auto;
 }
 div + div + div{
     grid-area: title;
     flex-direction: column;
     position: relative;;
-    height: 50px;
-    width: auto;
+    height: 150px;
+    width: 850px;
     padding: 0;
     margin: 0;
+    transform: translate(0, -100px);
 }
-div + div + div > div > p{
-    padding: 0 0 0 350px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 10px;
-    letter-spacing: 50px;
-    text-shadow:
-        0 0 5px #d8c5ff,
-        0 0 10px #a879ff,
-        0 0 20px #783cff,
-        0 0 35px #5420a8;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(65, 25, 120, 0.85),
-        rgba(100, 55, 160, 0.65),
-        rgba(65, 25, 120, 0.85),
-        transparent);
-        background-repeat: no-repeat;
-        background-size: 500px 100%;
-        background-position: 100% 50%;
-}
-div + div + div > div + div > p{
-    font-family: matrix;
-    position: absolute;
-    display: inline-block;
-    font-size: 50px;
-    letter-spacing: 5px;
-    height: 70px;
-    padding: 0 0 0 290px;
-    bottom: -85px;
-    z-index: -1;
+div + div + div + div{
+    grid-area: other;
+    position: relative;
+    padding-top: 50px;
+    align-items: center;
+    color: #F4F7FA;
+    height: 10px;
+    width: 100%;
 }
