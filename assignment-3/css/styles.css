@@ -86,6 +86,10 @@ body{
     background-attachment: scroll;
     background-size: contain;
 }
+a{
+    color: #F4F7FA;
+    text-decoration: none;
+}
 div{
     grid-area: header;
     display: flex;
@@ -133,7 +137,9 @@ div + div + div + div{
     color: #F4F7FA;
     height: 10px;
     width: 100%;
+    transform: translate(0, -70px);
 }
+
 div + div + div + div + div{
     font-family: OCRA;
     grid-area: footer;
