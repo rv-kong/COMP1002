@@ -134,3 +134,9 @@ div + div + div + div{
     height: 10px;
     width: 100%;
 }
+div + div + div + div + div{
+    font-family: OCRA;
+    grid-area: footer;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgb(20, 0, 122), 0 0 20px rgb(6, 6, 130), 0 0 25px rgb(0, 0, 137);
+}
